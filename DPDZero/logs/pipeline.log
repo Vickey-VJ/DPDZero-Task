@@ -1,0 +1,41 @@
+2025-05-03 20:20:15,624 - INFO - Creating DPDClass object
+2025-05-03 20:20:15,629 - INFO - Ingesting and validating data of call_logs
+2025-05-03 20:20:15,629 - INFO - Reading CSV files in the data directory: datas/call_logs.csv
+2025-05-03 20:20:15,650 - INFO - CSV files read successfully
+2025-05-03 20:20:15,650 - INFO - Validating data
+2025-05-03 20:20:15,669 - INFO - Column agent_id is valid
+2025-05-03 20:20:15,669 - INFO - Column org_id is valid
+2025-05-03 20:20:15,671 - INFO - Column call_date is valid
+2025-05-03 20:20:15,671 - INFO - Date column found: call_date, Validating date format
+2025-05-03 20:20:15,680 - INFO - Formatted call_date column of call_logs successfully
+2025-05-03 20:20:15,680 - INFO - Data of call_logs is ingested and validated successfully
+2025-05-03 20:20:15,686 - INFO - Ingesting and validating data of agent_roster
+2025-05-03 20:20:15,686 - INFO - Reading CSV files in the data directory: datas/agent_roster.csv
+2025-05-03 20:20:15,688 - INFO - CSV files read successfully
+2025-05-03 20:20:15,688 - INFO - Validating data
+2025-05-03 20:20:15,692 - INFO - Column agent_id is valid
+2025-05-03 20:20:15,692 - INFO - Column org_id is valid
+2025-05-03 20:20:15,692 - INFO - Data of agent_roster is ingested and validated successfully
+2025-05-03 20:20:15,692 - INFO - Ingesting and validating data of disposition_summary
+2025-05-03 20:20:15,692 - INFO - Reading CSV files in the data directory: datas/disposition_summary.csv
+2025-05-03 20:20:15,696 - INFO - CSV files read successfully
+2025-05-03 20:20:15,696 - INFO - Validating data
+2025-05-03 20:20:15,699 - INFO - Column agent_id is valid
+2025-05-03 20:20:15,700 - INFO - Column org_id is valid
+2025-05-03 20:20:15,700 - INFO - Column call_date is valid
+2025-05-03 20:20:15,700 - INFO - Date column found: call_date, Validating date format
+2025-05-03 20:20:15,702 - INFO - Formatted call_date column of disposition_summary successfully
+2025-05-03 20:20:15,702 - INFO - Data of disposition_summary is ingested and validated successfully
+2025-05-03 20:20:15,702 - INFO - Merging dataframes call_logs, agent_roster
+2025-05-03 20:20:15,702 - INFO - Merging dataframes...
+2025-05-03 20:20:15,714 - INFO - Dataframes merged successfully
+2025-05-03 20:20:15,714 - INFO - Merged: 500 rows and 11 columns
+2025-05-03 20:20:15,717 - INFO - Merging dataframes previously merged with disposition_summary
+2025-05-03 20:20:15,717 - INFO - Merging dataframes...
+2025-05-03 20:20:15,722 - INFO - Dataframes merged successfully
+2025-05-03 20:20:15,722 - INFO - Merged: 500 rows and 12 columns
+2025-05-03 20:20:15,722 - INFO - Starting feature engineering phase - agent performance summary
+2025-05-03 20:20:15,752 - INFO - Computed metrics for 20 agent-data combinations
+2025-05-03 20:20:15,758 - INFO - Saved csv report to 'result/agent_performance_summary.csv'
+2025-05-03 20:20:15,758 - INFO - Generating slack summary message for 2025-04-28
+2025-05-03 20:20:15,760 - INFO - Slack summary message generated successfully
